@@ -1,0 +1,19 @@
+ugyfelszolgalat_agent/
+│
+├── data/
+│   └── ugyfelszolgalat_logok.csv     # A generált adatkészleted (amit már elkészítettünk)
+│
+├── src/
+│   ├── __init__.py
+│   ├── agent_graph.py                # LangGraph workflow, állapotok (State) és csomópontok (Nodes)
+│   ├── tools.py                      # Egyedi eszközök (pl. Python REPL futtató, adatelemző segédfüggvények)
+│   ├── prompts.py                    # Rendszer- és segéd-promptok az LLM-nek a kódíráshoz
+│   └── config.py                     # Beállítások, API kulcsok kezelése (pl. OpenAI / Anthropic)
+│
+├── tests/
+│   └── test_agent.py                 # Egységtesztek a gráf működéséhez és a kódgeneráláshoz
+│
+├── .env                              # Környezeti változók (pl. OPENAI_API_KEY)
+├── .gitignore
+├── requirements.txt                  # Python függőségek (langchain, langgraph, pandas, matplotlib stb.)
+└── main.py                           # Futtatható belépési pont (itt indítod el az agentet a kérdéseddel)
