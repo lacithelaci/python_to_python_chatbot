@@ -2,6 +2,6 @@ langchain
 langgraph
 langchain-google-genai
 pandas
-numpy0
+numpy
 matplotlib
 python-dotenv
